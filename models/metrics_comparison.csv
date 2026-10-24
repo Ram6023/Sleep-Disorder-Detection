@@ -1,0 +1,28 @@
+model_name,feature_engineering,use_smote,cv_macro_f1_mean,cv_macro_f1_std,cv_balanced_acc_mean,cv_balanced_acc_std,cv_accuracy_mean,cv_accuracy_std,cv_weighted_f1_mean,cv_weighted_f1_std,fold_macro_f1_scores,base_model_name,configuration
+Random Forest (Base Features Only),False,False,0.8693,0.02,0.8673,0.0308,0.8962,0.0172,0.8952,0.0181,"[0.8622, 0.8727, 0.8835, 0.8929, 0.835]",Random Forest,Base Features Only
+Logistic Regression (Base + Engineered + SMOTE),True,True,0.8658,0.0331,0.8667,0.0368,0.8894,0.032,0.8887,0.032,"[0.8883, 0.8789, 0.8669, 0.8929, 0.8019]",Logistic Regression,Base + Engineered + SMOTE
+Bagging (Base + Engineered),True,False,0.8651,0.0356,0.8639,0.0418,0.8895,0.0275,0.8892,0.0275,"[0.8061, 0.9004, 0.8835, 0.8929, 0.8428]",Bagging,Base + Engineered
+Bagging (Base Features Only),False,False,0.8648,0.0362,0.8635,0.0424,0.8895,0.0275,0.8891,0.0277,"[0.8045, 0.9004, 0.8835, 0.8929, 0.8428]",Bagging,Base Features Only
+Support Vector Machine (Base Features Only),False,False,0.8646,0.0276,0.8621,0.0351,0.8929,0.0206,0.8923,0.0215,"[0.8359, 0.9004, 0.8589, 0.8929, 0.835]",Support Vector Machine,Base Features Only
+Decision Tree (Base + Engineered),True,False,0.8619,0.0376,0.8602,0.0463,0.8895,0.0278,0.8884,0.0288,"[0.8136, 0.9004, 0.8835, 0.8929, 0.819]",Decision Tree,Base + Engineered
+XGBoost (Base Features Only),False,False,0.8611,0.0293,0.8607,0.0389,0.8896,0.0172,0.8889,0.0178,"[0.8092, 0.8669, 0.8835, 0.8929, 0.8529]",XGBoost,Base Features Only
+XGBoost (Base + Engineered + SMOTE),True,True,0.8604,0.0396,0.862,0.0442,0.8862,0.0312,0.8861,0.0311,"[0.8061, 0.9004, 0.8835, 0.8929, 0.819]",XGBoost,Base + Engineered + SMOTE
+Logistic Regression (Base Features Only),False,False,0.86,0.0402,0.8633,0.0463,0.8828,0.0308,0.8827,0.0311,"[0.8207, 0.8909, 0.8937, 0.8929, 0.8019]",Logistic Regression,Base Features Only
+Support Vector Machine (Base + Engineered),True,False,0.8591,0.024,0.8566,0.0306,0.8895,0.0176,0.8889,0.0184,"[0.8359, 0.9004, 0.8589, 0.8654, 0.835]",Support Vector Machine,Base + Engineered
+Random Forest (Base + Engineered),True,False,0.8574,0.0254,0.8583,0.034,0.8862,0.0199,0.8856,0.0204,"[0.8359, 0.8396, 0.8835, 0.8929, 0.835]",Random Forest,Base + Engineered
+Gradient Boosting (Base Features Only),False,False,0.8574,0.0287,0.8601,0.0356,0.8829,0.0211,0.883,0.0209,"[0.8061, 0.8669, 0.868, 0.8929, 0.8529]",Gradient Boosting,Base Features Only
+XGBoost (Base + Engineered),True,False,0.8556,0.0303,0.8551,0.0376,0.8863,0.0195,0.8855,0.0199,"[0.8092, 0.8396, 0.8835, 0.8929, 0.8529]",XGBoost,Base + Engineered
+Logistic Regression (Base + Engineered),True,False,0.8542,0.0296,0.8578,0.0347,0.8794,0.0296,0.8791,0.0297,"[0.8622, 0.8632, 0.8509, 0.8929, 0.8019]",Logistic Regression,Base + Engineered
+Support Vector Machine (Base + Engineered + SMOTE),True,True,0.8542,0.0453,0.8564,0.0511,0.8827,0.0361,0.8824,0.0365,"[0.8359, 0.9004, 0.8835, 0.8767, 0.7742]",Support Vector Machine,Base + Engineered + SMOTE
+Gradient Boosting (Base + Engineered),True,False,0.8538,0.0301,0.8582,0.0377,0.8795,0.0224,0.8797,0.0226,"[0.8061, 0.8669, 0.868, 0.8929, 0.835]",Gradient Boosting,Base + Engineered
+AdaBoost (Base + Engineered),True,False,0.853,0.0414,0.8496,0.0463,0.8828,0.0304,0.8819,0.0312,"[0.8148, 0.9275, 0.8389, 0.8654, 0.818]",AdaBoost,Base + Engineered
+Gradient Boosting (Base + Engineered + SMOTE),True,True,0.8504,0.0329,0.8563,0.04,0.8762,0.0255,0.8764,0.0258,"[0.8061, 0.8669, 0.868, 0.8929, 0.818]",Gradient Boosting,Base + Engineered + SMOTE
+Random Forest (Base + Engineered + SMOTE),True,True,0.8482,0.0345,0.8526,0.04,0.8762,0.0276,0.8763,0.0275,"[0.8061, 0.8396, 0.8835, 0.8929, 0.819]",Random Forest,Base + Engineered + SMOTE
+AdaBoost (Base Features Only),False,False,0.845,0.0486,0.844,0.0526,0.8794,0.0348,0.8789,0.0356,"[0.8092, 0.9275, 0.8339, 0.8654, 0.7887]",AdaBoost,Base Features Only
+Bagging (Base + Engineered + SMOTE),True,True,0.8427,0.038,0.8506,0.0402,0.8662,0.0368,0.8668,0.0357,"[0.8061, 0.8051, 0.8835, 0.8929, 0.8258]",Bagging,Base + Engineered + SMOTE
+Decision Tree (Base Features Only),False,False,0.838,0.0574,0.8301,0.0629,0.8729,0.0358,0.8708,0.0386,"[0.7356, 0.8833, 0.8177, 0.8929, 0.8607]",Decision Tree,Base Features Only
+Decision Tree (Base + Engineered + SMOTE),True,True,0.8359,0.0569,0.836,0.0624,0.8661,0.0464,0.8657,0.0465,"[0.7493, 0.9004, 0.8424, 0.8904, 0.7968]",Decision Tree,Base + Engineered + SMOTE
+AdaBoost (Base + Engineered + SMOTE),True,True,0.8329,0.0517,0.8364,0.055,0.866,0.0419,0.8666,0.0416,"[0.8092, 0.911, 0.8198, 0.8654, 0.7589]",AdaBoost,Base + Engineered + SMOTE
+K-Nearest Neighbors (Base Features Only),False,False,0.8167,0.0389,0.8107,0.0468,0.8495,0.0279,0.8475,0.0299,"[0.7476, 0.8669, 0.8177, 0.8333, 0.818]",K-Nearest Neighbors,Base Features Only
+K-Nearest Neighbors (Base + Engineered),True,False,0.8153,0.0384,0.8107,0.0415,0.8495,0.0258,0.8476,0.0275,"[0.7407, 0.8396, 0.8449, 0.8333, 0.818]",K-Nearest Neighbors,Base + Engineered
+K-Nearest Neighbors (Base + Engineered + SMOTE),True,True,0.8076,0.0338,0.8033,0.0369,0.8428,0.0225,0.8415,0.024,"[0.7407, 0.8244, 0.8177, 0.8333, 0.822]",K-Nearest Neighbors,Base + Engineered + SMOTE

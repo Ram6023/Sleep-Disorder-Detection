@@ -1,0 +1,68 @@
+{
+  "selected_model": "Random Forest",
+  "full_model_name": "Random Forest (Base Features Only)",
+  "feature_engineering": false,
+  "use_smote": false,
+  "best_hyperparameters": {
+    "classifier__class_weight": null,
+    "classifier__max_depth": 6,
+    "classifier__min_samples_leaf": 1,
+    "classifier__min_samples_split": 4,
+    "classifier__n_estimators": 100
+  },
+  "cv_macro_f1_mean": 0.8693,
+  "cv_macro_f1_std": 0.02,
+  "cv_balanced_acc_mean": 0.8673,
+  "cv_accuracy_mean": 0.8962,
+  "test_metrics": {
+    "accuracy": 0.96,
+    "balanced_accuracy": 0.9347,
+    "macro_f1": 0.9352,
+    "weighted_f1": 0.9599,
+    "per_class": {
+      "None": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 44,
+        "roc_auc": 1.0
+      },
+      "Insomnia": {
+        "precision": 0.9286,
+        "recall": 0.8667,
+        "f1": 0.8966,
+        "support": 15,
+        "roc_auc": 0.9944
+      },
+      "Sleep Apnea": {
+        "precision": 0.8824,
+        "recall": 0.9375,
+        "f1": 0.9091,
+        "support": 16,
+        "roc_auc": 0.9926
+      }
+    },
+    "macro_roc_auc": 0.9957,
+    "weighted_roc_auc": 0.9973
+  },
+  "target_classes": [
+    "None",
+    "Insomnia",
+    "Sleep Apnea"
+  ],
+  "input_features": [
+    "Gender",
+    "Age",
+    "Occupation",
+    "Sleep Duration",
+    "Quality of Sleep",
+    "Physical Activity Level",
+    "Stress Level",
+    "BMI Category",
+    "Heart Rate",
+    "Daily Steps",
+    "BP_Systolic",
+    "BP_Diastolic"
+  ],
+  "random_state": 42
+}

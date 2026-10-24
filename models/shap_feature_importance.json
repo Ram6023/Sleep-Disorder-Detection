@@ -1,0 +1,360 @@
+{
+  "explainer": "shap.TreeExplainer",
+  "explainer_type": "TreeExplainer",
+  "lime_integrated": true,
+  "lime_explainer": "lime.lime_tabular.LimeTabularExplainer",
+  "model_name": "Random Forest (Base Features Only)",
+  "model_version": "1.0.0",
+  "target_classes": [
+    "None",
+    "Insomnia",
+    "Sleep Apnea"
+  ],
+  "display_class_names": [
+    "No recorded sleep disorder",
+    "Insomnia",
+    "Sleep Apnea"
+  ],
+  "class_mapping": {
+    "0": {
+      "internal": "None",
+      "display": "No recorded sleep disorder"
+    },
+    "1": {
+      "internal": "Insomnia",
+      "display": "Insomnia"
+    },
+    "2": {
+      "internal": "Sleep Apnea",
+      "display": "Sleep Apnea"
+    }
+  },
+  "background_sample_size": 100,
+  "holdout_test_samples": 75,
+  "random_state": 42,
+  "feature_count": 25,
+  "transformed_features": [
+    "Age",
+    "Sleep Duration",
+    "Quality of Sleep",
+    "Physical Activity Level",
+    "Stress Level",
+    "Heart Rate",
+    "Daily Steps",
+    "BP_Systolic",
+    "BP_Diastolic",
+    "Gender_Female",
+    "Gender_Male",
+    "Occupation_Accountant",
+    "Occupation_Doctor",
+    "Occupation_Engineer",
+    "Occupation_Lawyer",
+    "Occupation_Manager",
+    "Occupation_Nurse",
+    "Occupation_Sales Representative",
+    "Occupation_Salesperson",
+    "Occupation_Scientist",
+    "Occupation_Software Engineer",
+    "Occupation_Teacher",
+    "BMI Category_Normal",
+    "BMI Category_Obese",
+    "BMI Category_Overweight"
+  ],
+  "top_features_overall": [
+    {
+      "feature": "BP_Systolic",
+      "overall_mean_abs_shap": 0.06898,
+      "mean_abs_shap_No recorded sleep disorder": 0.09103,
+      "mean_abs_shap_Insomnia": 0.04581,
+      "mean_abs_shap_Sleep Apnea": 0.07008,
+      "rank": 1
+    },
+    {
+      "feature": "BP_Diastolic",
+      "overall_mean_abs_shap": 0.05087,
+      "mean_abs_shap_No recorded sleep disorder": 0.06914,
+      "mean_abs_shap_Insomnia": 0.03491,
+      "mean_abs_shap_Sleep Apnea": 0.04855,
+      "rank": 2
+    },
+    {
+      "feature": "BMI Category_Overweight",
+      "overall_mean_abs_shap": 0.04581,
+      "mean_abs_shap_No recorded sleep disorder": 0.06768,
+      "mean_abs_shap_Insomnia": 0.03769,
+      "mean_abs_shap_Sleep Apnea": 0.03208,
+      "rank": 3
+    },
+    {
+      "feature": "BMI Category_Normal",
+      "overall_mean_abs_shap": 0.03855,
+      "mean_abs_shap_No recorded sleep disorder": 0.05782,
+      "mean_abs_shap_Insomnia": 0.03058,
+      "mean_abs_shap_Sleep Apnea": 0.02725,
+      "rank": 4
+    },
+    {
+      "feature": "Physical Activity Level",
+      "overall_mean_abs_shap": 0.02773,
+      "mean_abs_shap_No recorded sleep disorder": 0.02112,
+      "mean_abs_shap_Insomnia": 0.04078,
+      "mean_abs_shap_Sleep Apnea": 0.02129,
+      "rank": 5
+    },
+    {
+      "feature": "Sleep Duration",
+      "overall_mean_abs_shap": 0.02604,
+      "mean_abs_shap_No recorded sleep disorder": 0.0347,
+      "mean_abs_shap_Insomnia": 0.03103,
+      "mean_abs_shap_Sleep Apnea": 0.01238,
+      "rank": 6
+    },
+    {
+      "feature": "Age",
+      "overall_mean_abs_shap": 0.02342,
+      "mean_abs_shap_No recorded sleep disorder": 0.02542,
+      "mean_abs_shap_Insomnia": 0.03084,
+      "mean_abs_shap_Sleep Apnea": 0.01401,
+      "rank": 7
+    },
+    {
+      "feature": "Occupation_Nurse",
+      "overall_mean_abs_shap": 0.02258,
+      "mean_abs_shap_No recorded sleep disorder": 0.02234,
+      "mean_abs_shap_Insomnia": 0.0122,
+      "mean_abs_shap_Sleep Apnea": 0.03321,
+      "rank": 8
+    },
+    {
+      "feature": "Heart Rate",
+      "overall_mean_abs_shap": 0.01639,
+      "mean_abs_shap_No recorded sleep disorder": 0.01764,
+      "mean_abs_shap_Insomnia": 0.01062,
+      "mean_abs_shap_Sleep Apnea": 0.02092,
+      "rank": 9
+    },
+    {
+      "feature": "Daily Steps",
+      "overall_mean_abs_shap": 0.01084,
+      "mean_abs_shap_No recorded sleep disorder": 0.00957,
+      "mean_abs_shap_Insomnia": 0.01096,
+      "mean_abs_shap_Sleep Apnea": 0.01199,
+      "rank": 10
+    },
+    {
+      "feature": "Quality of Sleep",
+      "overall_mean_abs_shap": 0.01069,
+      "mean_abs_shap_No recorded sleep disorder": 0.0135,
+      "mean_abs_shap_Insomnia": 0.01239,
+      "mean_abs_shap_Sleep Apnea": 0.00618,
+      "rank": 11
+    },
+    {
+      "feature": "Stress Level",
+      "overall_mean_abs_shap": 0.00955,
+      "mean_abs_shap_No recorded sleep disorder": 0.01237,
+      "mean_abs_shap_Insomnia": 0.00946,
+      "mean_abs_shap_Sleep Apnea": 0.00681,
+      "rank": 12
+    },
+    {
+      "feature": "Gender_Male",
+      "overall_mean_abs_shap": 0.00438,
+      "mean_abs_shap_No recorded sleep disorder": 0.00405,
+      "mean_abs_shap_Insomnia": 0.00381,
+      "mean_abs_shap_Sleep Apnea": 0.00528,
+      "rank": 13
+    },
+    {
+      "feature": "Gender_Female",
+      "overall_mean_abs_shap": 0.00343,
+      "mean_abs_shap_No recorded sleep disorder": 0.00334,
+      "mean_abs_shap_Insomnia": 0.00268,
+      "mean_abs_shap_Sleep Apnea": 0.00428,
+      "rank": 14
+    },
+    {
+      "feature": "Occupation_Doctor",
+      "overall_mean_abs_shap": 0.00334,
+      "mean_abs_shap_No recorded sleep disorder": 0.00323,
+      "mean_abs_shap_Insomnia": 0.00299,
+      "mean_abs_shap_Sleep Apnea": 0.00381,
+      "rank": 15
+    },
+    {
+      "feature": "Occupation_Teacher",
+      "overall_mean_abs_shap": 0.00306,
+      "mean_abs_shap_No recorded sleep disorder": 0.00242,
+      "mean_abs_shap_Insomnia": 0.00326,
+      "mean_abs_shap_Sleep Apnea": 0.00352,
+      "rank": 16
+    },
+    {
+      "feature": "Occupation_Salesperson",
+      "overall_mean_abs_shap": 0.00306,
+      "mean_abs_shap_No recorded sleep disorder": 0.00347,
+      "mean_abs_shap_Insomnia": 0.00437,
+      "mean_abs_shap_Sleep Apnea": 0.00135,
+      "rank": 17
+    },
+    {
+      "feature": "BMI Category_Obese",
+      "overall_mean_abs_shap": 0.00182,
+      "mean_abs_shap_No recorded sleep disorder": 0.00271,
+      "mean_abs_shap_Insomnia": 0.00206,
+      "mean_abs_shap_Sleep Apnea": 0.00068,
+      "rank": 18
+    },
+    {
+      "feature": "Occupation_Lawyer",
+      "overall_mean_abs_shap": 0.0018,
+      "mean_abs_shap_No recorded sleep disorder": 0.00193,
+      "mean_abs_shap_Insomnia": 0.00226,
+      "mean_abs_shap_Sleep Apnea": 0.00123,
+      "rank": 19
+    },
+    {
+      "feature": "Occupation_Engineer",
+      "overall_mean_abs_shap": 0.00151,
+      "mean_abs_shap_No recorded sleep disorder": 0.0011,
+      "mean_abs_shap_Insomnia": 0.00212,
+      "mean_abs_shap_Sleep Apnea": 0.00131,
+      "rank": 20
+    },
+    {
+      "feature": "Occupation_Accountant",
+      "overall_mean_abs_shap": 0.00134,
+      "mean_abs_shap_No recorded sleep disorder": 0.00076,
+      "mean_abs_shap_Insomnia": 0.00201,
+      "mean_abs_shap_Sleep Apnea": 0.00125,
+      "rank": 21
+    },
+    {
+      "feature": "Occupation_Software Engineer",
+      "overall_mean_abs_shap": 0.00031,
+      "mean_abs_shap_No recorded sleep disorder": 0.0001,
+      "mean_abs_shap_Insomnia": 0.0004,
+      "mean_abs_shap_Sleep Apnea": 0.00044,
+      "rank": 22
+    },
+    {
+      "feature": "Occupation_Scientist",
+      "overall_mean_abs_shap": 0.00019,
+      "mean_abs_shap_No recorded sleep disorder": 0.00025,
+      "mean_abs_shap_Insomnia": 0.00029,
+      "mean_abs_shap_Sleep Apnea": 4e-05,
+      "rank": 23
+    },
+    {
+      "feature": "Occupation_Manager",
+      "overall_mean_abs_shap": 0.0,
+      "mean_abs_shap_No recorded sleep disorder": 0.0,
+      "mean_abs_shap_Insomnia": 0.0,
+      "mean_abs_shap_Sleep Apnea": 0.0,
+      "rank": 24
+    },
+    {
+      "feature": "Occupation_Sales Representative",
+      "overall_mean_abs_shap": 0.0,
+      "mean_abs_shap_No recorded sleep disorder": 0.0,
+      "mean_abs_shap_Insomnia": 0.0,
+      "mean_abs_shap_Sleep Apnea": 0.0,
+      "rank": 25
+    }
+  ],
+  "sample_explanation": {
+    "sample_index": 0,
+    "true_class": 1,
+    "true_class_name": "Insomnia",
+    "predicted_class": 1,
+    "predicted_class_name": "Insomnia",
+    "predicted_probabilities": {
+      "No recorded sleep disorder": 0.0537,
+      "Insomnia": 0.9412,
+      "Sleep Apnea": 0.0051
+    },
+    "shap_contributions": [
+      {
+        "feature": "BMI Category_Overweight",
+        "value": 1.0,
+        "shap_value": 0.09852583618448989
+      },
+      {
+        "feature": "BP_Systolic",
+        "value": 0.8361845717930287,
+        "shap_value": 0.08976385907903932
+      },
+      {
+        "feature": "BP_Diastolic",
+        "value": 0.8649558961262134,
+        "shap_value": 0.08425288910057134
+      },
+      {
+        "feature": "Physical Activity Level",
+        "value": -0.7041879956927356,
+        "shap_value": 0.08009122610451413
+      },
+      {
+        "feature": "Age",
+        "value": 0.20293409591183942,
+        "shap_value": 0.07206709092512029
+      },
+      {
+        "feature": "BMI Category_Normal",
+        "value": 0.0,
+        "shap_value": 0.06029365661768679
+      }
+    ],
+    "lime_contributions": [
+      {
+        "rule": "Physical Activity Level <= -0.70",
+        "weight": 0.0695
+      },
+      {
+        "rule": "0.06 < BP_Diastolic <= 0.86",
+        "weight": 0.0598
+      },
+      {
+        "rule": "0.00 < BMI Category_Overweight <= 1.00",
+        "weight": 0.0584
+      },
+      {
+        "rule": "BMI Category_Normal <= 0.00",
+        "weight": 0.0456
+      },
+      {
+        "rule": "0.19 < BP_Systolic <= 0.84",
+        "weight": 0.0424
+      },
+      {
+        "rule": "0.09 < Age <= 0.90",
+        "weight": 0.0333
+      },
+      {
+        "rule": "Occupation_Salesperson <= 0.00",
+        "weight": -0.0266
+      },
+      {
+        "rule": "Occupation_Scientist <= 0.00",
+        "weight": 0.0265
+      },
+      {
+        "rule": "Occupation_Manager <= 0.00",
+        "weight": 0.0183
+      },
+      {
+        "rule": "Occupation_Software Engineer <= 0.00",
+        "weight": -0.0154
+      }
+    ]
+  },
+  "artifacts": {
+    "shap_summary": "reports/figures/shap_summary.png",
+    "shap_feature_importance": "reports/figures/shap_feature_importance.png",
+    "shap_class_comparison": "reports/figures/shap_class_comparison.png",
+    "shap_individual_prediction": "reports/figures/shap_individual_prediction.png",
+    "lime_individual_prediction": "reports/figures/lime_individual_prediction.png",
+    "shap_report": "reports/shap_report.md"
+  },
+  "disclaimer": "Predictions and feature attributions are experimental research outputs, not medical diagnoses."
+}

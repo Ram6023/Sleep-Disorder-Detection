@@ -1,0 +1,92 @@
+{
+  "accuracy": 0.96,
+  "balanced_accuracy": 0.9347,
+  "macro_f1": 0.9352,
+  "weighted_f1": 0.9599,
+  "macro_precision": 0.937,
+  "weighted_precision": 0.9606,
+  "macro_recall": 0.9347,
+  "weighted_recall": 0.96,
+  "per_class": {
+    "None": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 44,
+      "roc_auc": 1.0
+    },
+    "Insomnia": {
+      "precision": 0.9286,
+      "recall": 0.8667,
+      "f1": 0.8966,
+      "support": 15,
+      "roc_auc": 0.9944
+    },
+    "Sleep Apnea": {
+      "precision": 0.8824,
+      "recall": 0.9375,
+      "f1": 0.9091,
+      "support": 16,
+      "roc_auc": 0.9926
+    }
+  },
+  "confusion_matrix": [
+    [
+      44,
+      0,
+      0
+    ],
+    [
+      0,
+      13,
+      2
+    ],
+    [
+      0,
+      1,
+      15
+    ]
+  ],
+  "classification_report_dict": {
+    "None": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 44.0
+    },
+    "Insomnia": {
+      "precision": 0.9285714285714286,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.896551724137931,
+      "support": 15.0
+    },
+    "Sleep Apnea": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9375,
+      "f1-score": 0.9090909090909091,
+      "support": 16.0
+    },
+    "accuracy": 0.96,
+    "macro avg": {
+      "precision": 0.9369747899159663,
+      "recall": 0.9347222222222222,
+      "f1-score": 0.9352142110762801,
+      "support": 75.0
+    },
+    "weighted avg": {
+      "precision": 0.9606162464985993,
+      "recall": 0.96,
+      "f1-score": 0.9599164054336469,
+      "support": 75.0
+    }
+  },
+  "classification_report_str": "              precision    recall  f1-score   support\n\n        None       1.00      1.00      1.00        44\n    Insomnia       0.93      0.87      0.90        15\n Sleep Apnea       0.88      0.94      0.91        16\n\n    accuracy                           0.96        75\n   macro avg       0.94      0.93      0.94        75\nweighted avg       0.96      0.96      0.96        75\n",
+  "macro_roc_auc": 0.9957,
+  "weighted_roc_auc": 0.9973,
+  "per_class_roc_auc": {
+    "None": 1.0,
+    "Insomnia": 0.9944,
+    "Sleep Apnea": 0.9926
+  },
+  "roc_auc_supported": true
+}
